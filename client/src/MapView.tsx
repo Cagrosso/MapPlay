@@ -1,5 +1,6 @@
 import React from 'react';
 import { GoogleMap, useLoadScript, Circle } from '@react-google-maps/api';
+import { GOOGLE_MAPS_API_KEY } from './secrets';
 
 const containerStyle = {
   width: '800px',
@@ -17,7 +18,7 @@ export interface mapProps {
 
 const MapView: React.FC<mapProps> = ({ pointsOfInterest }) => {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: '',
+    googleMapsApiKey: GOOGLE_MAPS_API_KEY,
   });
 
   const poi = pointsOfInterest.map((circleProps) => {
