@@ -25,3 +25,6 @@ client/yarn-debug.log*
 client/yarn-error.log*
 
 client/src/secrets.ts
+
+go.sum
+vendor/

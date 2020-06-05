@@ -1,0 +1,8 @@
+.MyButton {
+  display: inline-block;
+  background-color: #17e863;
+  font-size: 16px;
+  border: none;
+  color: white;
+  text-align: center;
+}

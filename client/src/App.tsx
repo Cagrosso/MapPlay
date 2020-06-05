@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import MapView from './MapView';
 import './App.css';
 import TextField from './textField';
+import MyButton from './myButton';
 
 function App(): ReactElement {
   const { register, handleSubmit } = useForm();
@@ -46,6 +47,7 @@ function App(): ReactElement {
           name={'radiusTextField'}
         />
       </form>
+      <MyButton onClick={() => console.log("I was clicked")} labelText={"Update"}/>
     </div>
   );
 }

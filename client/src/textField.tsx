@@ -1,4 +1,5 @@
 import React from 'react';
+import "./textField.css"
 
 export interface textFieldProps {
   reference: any;
@@ -14,9 +15,9 @@ const TextField: React.FC<textFieldProps> = ({
   id,
 }: textFieldProps) => {
   return (
-    <div>
+    <div className={"textBoxDiv"} >
       <label htmlFor={id}>{fieldLabel}</label>
-      <input id={id} name={name} ref={reference}></input>
+      <input id={id} className={"textInput"} name={name} ref={reference}></input>
     </div>
   );
 };
